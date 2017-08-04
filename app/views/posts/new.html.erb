@@ -1,0 +1,12 @@
+<h2>New post</h2>
+
+<%= form_for @post do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.label :is_published %>
+  <%= f.check_box :is_published %>
+
+
+  <%= f.submit %>
+<% end %>
