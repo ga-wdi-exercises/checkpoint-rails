@@ -16,7 +16,7 @@ post_data = get_post_data()
 
 post_data.each_pair do |content, is_published|
   info = post_data[content]
-  current_artist = Post.create!({
+  current_post = Post.create!({
     content:         info[:content],
     is_published:    info[:is_published],
   })
