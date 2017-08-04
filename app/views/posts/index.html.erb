@@ -1,0 +1,8 @@
+<h1> POSTS </h1>
+<%@posts.each do |post|%>
+<p> <%=link_to post.content, post%> </p>
+<% end %>
+
+
+
+<h1><%=link_to "CREATE A POST", new_post_path %> </h1>
