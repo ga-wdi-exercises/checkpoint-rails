@@ -1,0 +1,9 @@
+<%= form_for @post do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <br>
+  <%= f.label :is_published %>
+  <%= f.text_area :is_published %>
+  <br>
+  <%= f.submit %>
+<% end %>
