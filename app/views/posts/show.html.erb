@@ -1,15 +1,12 @@
 <h2><%= @post.content %> </h2>
 
-
-
-
 <h3>comments</h3>
 <ul>
   <% @post.comments.each do |comment| %>
     <!-- build the list element for each song -->
     <li>
       <a href="/comments/<%= comment.id %>">
-        <%= comment.body %> 
+        <%= comment.body %>
       </a>
     </li>
 
