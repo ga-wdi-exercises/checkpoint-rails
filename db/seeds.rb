@@ -20,3 +20,5 @@ post_data.each_pair do |content, is_published|
     content:         info[:content],
     is_published:    info[:is_published],
   })
+
+  
