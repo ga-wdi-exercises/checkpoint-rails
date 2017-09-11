@@ -1,0 +1,6 @@
+<h1>INDEX FOR POSTS</h1>
+
+<% @posts.each do |post| %>
+  <a href="/index/show/<%post.id%>"> Post: <%= post.id %></a>
+  </br>
+<% end %>
