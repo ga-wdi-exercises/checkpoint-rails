@@ -1,3 +1,9 @@
-<h2> Here's a Post </h2>
+<h2>Posts <a href="/post/new">(+)</a></h2>
 
-<p> <%= @post %> </p>
+<ul>
+  <% @post.each do |post| %>
+    <li>
+        <%= post.content %>
+    </li>
+  <% end %>
+</ul>
