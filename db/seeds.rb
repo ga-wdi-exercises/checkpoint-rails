@@ -7,13 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-post_data = {
-  "post-1" => {
-    content: "This is a post.",
-    is_published: true,
-  },
-  "post-2" => {
-    content: "Another one. *Khaled Voice*",
-    is_published: true,
-  }
-}
+require_relative '../app/models/post'
+
+
+Post.create(content: "Here's me venting to the world", is_published: true)
+Post.create(content: "What is the meaning of life, my second post", is_published: true)
