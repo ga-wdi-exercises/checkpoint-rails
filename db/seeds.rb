@@ -9,7 +9,8 @@
 require 'active_record'
 require 'pg'
 
-require_relative '../models/post'
+require_relative './models/post'
+require_relative './models/comment'
 
 Post.create(content: "I haven't had breakfast today!", is_published: true)
 Post.create(content: "I am on time!", is_published: true)
