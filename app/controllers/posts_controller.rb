@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
-		@post = Post.create!(post_params)
+		@post = Post.create!(params[:artist])
 
 		redirect_to post_path(@post)
 	end
