@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+	posts = Post.create([{content: "blah blah blah post is good ya", is_published: true}, {content: "this post good to, ya", is_published: true}])
