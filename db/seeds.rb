@@ -5,8 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require_relative './post_data.rb'
-require_relative './comment_data.rb'
+# require_relative './create_posts.rb'
+# require_relative './create_comments.rb'
 
 Post.destroy_all
-Comment.destroy_all
+
+post1 = Post.create(content:"lorem", is_published: true)
+post2 = Post.create(content:"lorem", is_published: true)
