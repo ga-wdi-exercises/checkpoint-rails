@@ -8,14 +8,6 @@
 Post.destroy_all
 Comment.destroy_all
 
-love = Post.create({
-  content: "Love",
-  is_published: true
+love = Post.create!(content: "Love", is_published: true )
 
-})
-
-happy = Post.create({
-  content: "Happy",
-  is_published: true
-
-})
+happy = Post.create!(content: "happy", is_published: true)
