@@ -12,5 +12,6 @@ Comment.destroy_all
 # artist_data = get_artist_data()
 
 
-post1 = Post.create(content: "blah blha", is_published: "true")
-post2 = Post.create(content: "blah blsfdjgsdfgiha", is_published: "true")
+post1 = Post.create(content: "blah blha", is_published: "true", comment_id: 1)
+post2 = Post.create(content: "blah blsfdjgsdfgiha", is_published: "true", comment_id: 1)
+comment0 = Comment.create(body: "this is no good", post_id: 1)
