@@ -1,0 +1,6 @@
+<h2>Posts<a href="/posts/new">(+)</a></h2>
+
+
+<% @posts.each do |post| %>
+  <p><%= link_to post.content %><p>
+<% end %>
