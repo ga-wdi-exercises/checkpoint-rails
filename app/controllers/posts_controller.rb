@@ -4,6 +4,11 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  #show
+  def show
+    @post = Post.find(params[:id])
+  end
+  
   # new
   def new
     @post = Post.new
@@ -16,14 +21,8 @@ class PostsController < ApplicationController
     redirect_to post_path(@post)
   end
 
-  #show
-  def show
-    @post = Post.find(params[:id])
+  private
+  def post_params
+    params.require(:post).permit(:content, :is_published)
   end
-
-
-  # private
-  # def artist_params
-  #   params.require(:artist).permit(:name, :photo_url, :nationality)
-  # end
 end

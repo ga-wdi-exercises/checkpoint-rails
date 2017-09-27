@@ -24,8 +24,6 @@ ActiveRecord::Schema.define(version: 20170911132556) do
   create_table "posts", force: :cascade do |t|
     t.string "content"
     t.boolean "is_published"
-    t.bigint "comment_id", null: false
-    t.index ["comment_id"], name: "index_posts_on_comment_id"
   end
 
 end
