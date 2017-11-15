@@ -1,0 +1,8 @@
+<h1>Posts</h1>
+<%= link_to "(+)", new_post_path %><br>
+
+<% @posts.each do |post|%>
+  <% if post.is_published %>
+    <%= link_to post.content, post_path(post) %><br>
+  <% end %>
+<% end %>
