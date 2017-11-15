@@ -1,0 +1,9 @@
+<h2>Posts<%= link_to "(+)", new_post_path(@post) %></h2>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.content, post_path(post) %>
+    </li>
+  <% end %>
+</ul>
