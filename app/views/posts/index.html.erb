@@ -1,0 +1,5 @@
+<h1><%= link_to "+", new_post_path %></h1>
+
+<% @posts.each do | post | %>
+  <article><%= post.content %></article>
+<% end %>
