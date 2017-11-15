@@ -1,0 +1,5 @@
+<h2>All Posts</h2>
+<% @posts.each do |post| %>
+<li><%= link_to post.content, post_path(post) %></li>
+<% end %>
+<h4>Create New Post <%= link_to "(+)", new_post_path %></h4>
