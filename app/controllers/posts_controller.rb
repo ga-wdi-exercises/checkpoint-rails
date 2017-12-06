@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new
-    @post[:category] = params[:post][:category]
+    @post[:content] = params[:post][:comments]
     if @post.save
       flash[:notice] = 'Post Created'
       redirect_to @post
